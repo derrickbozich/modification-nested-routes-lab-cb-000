@@ -8,15 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    binding.pry
-    if params[:song_id]
-      
-      
-    else
-      @artist = Artist.new
-    end
-    
-    
+    @artist = Artist.new
   end
 
   def create
