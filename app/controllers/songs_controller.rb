@@ -27,9 +27,11 @@ class SongsController < ApplicationController
   def new
     binding.pry
     if params[:artist_id]
+      artist = Artist.find_by_id(params[:artist_id])
+      
       
     else
-      @song = Song.new
+      @song = Song.new(:artist_id => params[:artist_id])
     end
   
   end
