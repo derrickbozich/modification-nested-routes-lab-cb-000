@@ -8,7 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    if condition
+    if params[:song_id]
       
     else
       @artist = Artist.new
