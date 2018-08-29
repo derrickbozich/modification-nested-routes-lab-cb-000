@@ -59,7 +59,7 @@ class SongsController < ApplicationController
       if @artist.nil?
         redirect_to artists_path, alert: "Artist not found"
       elsif @song.nil?
-        redirect_to artist_songs_path(@artist)
+        redirect_to artist_songs_path(@artist), alert: "Song not found"
       end
       
       
