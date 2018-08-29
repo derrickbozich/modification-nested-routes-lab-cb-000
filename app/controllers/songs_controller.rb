@@ -26,7 +26,12 @@ class SongsController < ApplicationController
 
   def new
     binding.pry
-    @song = Song.new
+    if condition
+      
+    else
+      @song = Song.new
+    end
+  
   end
 
   def create
