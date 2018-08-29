@@ -26,7 +26,7 @@ class SongsController < ApplicationController
 
   def new
     binding.pry
-    if condition
+    if params[:artist_id]
       
     else
       @song = Song.new
