@@ -9,6 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     if params[:song_id]
+      binding.pry
       
     else
       @artist = Artist.new
